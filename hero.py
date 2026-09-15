@@ -17,10 +17,11 @@ class Hero:
         self.health -= damage
         if self.health < 0: self.health = 0
         print(f"{self.name} takes {damage} damage. Health: {self.health}")
-        print(f"{self.name}'s armor stopped some of the damage.")
+        print(f"{self.name}'s armor stopped some of the damage.\n")
 
     def is_alive(self):
         if self.health == 0: return False
         else: return True
 
-    
+    def dance(self):
+        print(f"{self.name} dances with all his might.\n") ### This does nothing important just for fun
